@@ -1,0 +1,145 @@
+.projects-section {
+  background-color: #0f0f14;
+  padding: 60px 80px;
+}
+
+/* TITLE */
+.projects-heading {
+  color: #b515ff;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+/* CARD */
+.project-card {
+  background: rgba(255, 255, 255, 0.04);
+  padding: 32px;
+  border-radius: 16px;
+  margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  transition: 0.3s ease;
+  border-left: 4px solid #b515ff;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 25px rgba(181, 21, 255, 0.25);
+}
+
+/* REVERSE ALIGNMENT */
+.project-card.reverse {
+  flex-direction: row-reverse;
+}
+
+/* LEFT CONTENT */
+.project-left {
+  flex: 1;
+}
+
+.project-left h3 {
+  font-size: 26px;
+  color: white;
+  margin-bottom: 12px;
+}
+
+/* TAGS */
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.project-tags span {
+  background: rgba(181, 21, 255, 0.15);
+  color: #da9cff;
+  font-size: 13px;
+  padding: 6px 14px;
+  border-radius: 20px;
+  border: 1px solid #b515ff;
+}
+
+/* DESCRIPTION */
+.project-left p {
+  color: #cfcfcf;
+  font-size: 15px;
+  max-width: 550px;
+  margin-bottom: 22px;
+  line-height: 1.6;
+}
+
+/* BUTTONS */
+.project-buttons {
+  display: flex;
+  gap: 14px;
+}
+
+.btn {
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 14px;
+  text-decoration: none;
+  color: white;
+  display: inline-flex;
+  align-items: center;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+/* GITHUB */
+.github {
+  background: linear-gradient(135deg, #b515ff, #7f00ff);
+}
+
+.github:hover {
+  background: #9d00e8;
+  transform: scale(1.05);
+}
+
+/* IMAGE AREA */
+.project-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.project-right img {
+  width: 100%;
+  max-width: 360px;
+  border-radius: 14px;
+  border: 2px solid #b515ff;
+  box-shadow: 0 0 15px rgba(181, 21, 255, 0.3);
+}
+.project-left img {
+  width: 100%;
+  max-width: 360px;
+  border-radius: 14px;
+  border: 2px solid #b515ff;
+  box-shadow: 0 0 15px rgba(181, 21, 255, 0.3);
+}
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .project-card,
+  .project-card.reverse {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .project-left p {
+    max-width: 100%;
+  }
+
+  .project-buttons {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .projects-heading {
+    font-size: 28px;
+  }
+}

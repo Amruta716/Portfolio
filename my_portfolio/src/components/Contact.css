@@ -1,0 +1,114 @@
+.contact-section {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  margin: 40px 20px;
+}
+
+.contact-left,
+.contact-right {
+  width: 48%; /* Same width for balance */
+}
+
+.contact-left h1,
+.contact-right h1 {
+  font-size: 30px;
+  font-weight: 700;
+  color: #b515ff;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.contact-left p {
+  font-size: 18px;
+  color: #c1baba;
+  line-height: 1.6;
+}
+
+.contact-info {
+  margin-top: 20px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 15px; /* Space between icon and text */
+  font-size: 18px;
+  color: #989393;
+  margin-bottom: 15px; /* Space between each contact item */
+}
+
+.contact-item i {
+  font-size: 24px;
+  color:whitesmoke; /* Purple icon color */
+}
+
+.contact-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 25px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  max-width: 580px;
+  background-color: #c492db;
+  border-radius: 30px;
+  padding: 25px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.contact-form .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contact-form label {
+  font-size: 18px;
+  color: #333333;
+  font-weight: 600;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 14px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 25px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #b515ff;
+  box-shadow: 0 0 8px #b515ff;
+  outline: none;
+}
+
+.contact-form button {
+  padding: 14px 28px;
+  background-color: #b515ff;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color:whitesmoke;
+  color: #333333;
+}
+
+.contact-form button:active {
+  background-color: #c2185b;
+}

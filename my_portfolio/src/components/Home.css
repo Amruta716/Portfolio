@@ -1,0 +1,134 @@
+/* Hero Section */
+.hero {
+  display: flex;
+  flex-direction: column;
+  gap: 37px;
+  margin-top: 7%;
+  margin-left: 10%;
+}
+
+.hero h1 {
+  width: 70%;
+  font-size: 40px;
+  font-weight: 600;
+  color: #b415ff;
+}
+
+.hero p {
+  width: 50%;
+  font-size: 28px;
+  line-height: 38px;
+  color: #a9a2a2;
+}
+
+.hero-action {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  font-size: 28px;
+  font-weight: 500;
+  margin-bottom: 50px;
+}
+
+.hero-connect {
+  padding: 15px 35px;
+  border-radius: 50px;
+  background-color: #930ad3;
+  color: rgb(226, 216, 216);
+  border: none;
+  font-size: 19px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.hero-resume {
+  padding: 15px 35px;
+  border-radius: 50px;
+  font-size: 19px;
+  cursor: pointer;
+  border: 2px solid whitesmoke;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.hero-project{
+  padding: 15px 35px;
+  border-radius: 50px;
+  font-size: 19px;
+  cursor: pointer;
+  border: 2px solid whitesmoke;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.hero-project:hover{
+  border-color: #b415ff;
+}
+
+.hero-connect:hover {
+  background-color: whitesmoke;
+  transform: scale(1.05);
+  color: black;
+}
+
+.hero-resume:hover {
+  border-color: #b415ff;
+}
+
+/* Responsive Design for Smaller Screens */
+
+/* For screens smaller than 768px */
+@media (max-width: 768px) {
+  .hero {
+    margin-left: 5%;
+    margin-top: 20%; /* Adjust top margin for smaller screens */
+    text-align: center; /* Center-align text */
+  }
+
+  .hero h1 {
+    width: 90%;
+    font-size: 28px; /* Adjust font size for small screens */
+  }
+
+  .hero p {
+    width: 90%;
+    font-size: 22px; /* Adjust font size for small screens */
+    line-height: 32px;
+  }
+
+  .hero-action {
+    flex-direction: column; /* Stack the buttons vertically */
+    gap: 15px; /* Adjust gap between buttons */
+    font-size: 22px; /* Adjust font size */
+  }
+
+  .hero-connect,
+  .hero-resume {
+    padding: 12px 30px; /* Adjust padding for buttons */
+    font-size: 17px; /* Adjust font size for buttons */
+  }
+}
+
+/* For screens smaller than 480px */
+@media (max-width: 480px) {
+  .hero {
+    margin-left: 2%;
+    margin-top: 15%; /* Reduce margin at the top */
+  }
+
+  .hero h1 {
+    font-size: 24px; /* Further reduce the font size */
+  }
+
+  .hero p {
+    font-size: 20px; /* Adjust font size for smaller screens */
+    line-height: 30px;
+  }
+
+  .hero-action {
+    gap: 10px; /* Adjust gap between buttons */
+  }
+
+  .hero-connect,
+  .hero-resume {
+    padding: 10px 25px; /* Adjust padding for buttons */
+    font-size: 16px; /* Adjust font size for buttons */
+  }
+}
