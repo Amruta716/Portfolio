@@ -6,9 +6,8 @@ import NavBar from "./components/NavBar";
 import Project from "./components/Project";
 import Skills from "./components/Skills";
 import Contact from "./components/Contact";
-import {  Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import Footer from "./Footer/Footer";
-
 
 // import React, { Component } from "react";
 // import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -42,7 +41,7 @@ import Footer from "./Footer/Footer";
 // }
 
 function App() {
- return (
+  return (
     <>
       <NavBar />
 
@@ -54,7 +53,7 @@ function App() {
             <>
               <Home />
               <AboutUs />
-              <Skills/>
+              <Skills />
               <Project />
               <Contact />
             </>
@@ -62,6 +61,7 @@ function App() {
         />
 
         {/* SINGLE PAGES */}
+        <Route path="/" element={<Home />} />
         <Route path="/about" element={<AboutUs />} />
         <Route path="/projects" element={<Project />} />
         <Route path="/skills" element={<Skills />} />
