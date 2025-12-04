@@ -1,6 +1,6 @@
 import "./projects.css";
-import ecommerce from "../Asserts/Ecommerce.jpg"
-import quiz from "../Asserts/quiz.png"
+import ecommerce from "../Asserts/Ecommerce.jpg";
+import quiz from "../Asserts/quiz.png";
 export default function Projects() {
   const projects = [
     {
@@ -43,7 +43,6 @@ export default function Projects() {
               <a href={project.github} className="btn github">
                 View Github
               </a>
-              {/* <a href={project.live} target="_blank" className="btn live"> View project ↗ </a> */}
             </div>
           </div>
 
