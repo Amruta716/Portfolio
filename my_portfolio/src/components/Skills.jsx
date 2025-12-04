@@ -15,7 +15,7 @@ export default function Skill() {
     { name: "JavaScript", img: jsImg, level: "Advanced" },
     { name: "React.Js", img: reactImg, level: "Advanced" },
     { name: "Next.Js", img: nextImg, level: "Beginner" },
-    // { name: "SQL", img: nextImg, level: "Intermediate" },
+    
 
     { name: "Git", img: git, level: "Tool" },
     { name: "GitHub", img: github, level: "Tool" },
