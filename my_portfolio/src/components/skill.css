@@ -2,7 +2,7 @@
 .skills-section {
   background-color: #111;
   padding: 60px 40px;
-  min-height: 100vh;
+  min-height: 90vh;
 }
 
 /* TITLE */
@@ -32,7 +32,7 @@
 
 /* CARD STYLE */
 .skill-card {
-  background: #1e1e1e;
+   background-color: rgba(238, 232, 232, 0.1);
   padding: 20px;
   width: 180px;
   border-radius: 20px;

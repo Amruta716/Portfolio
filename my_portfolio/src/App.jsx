@@ -4,6 +4,7 @@ import AboutUs from "./components/AboutUs";
 import "./global.css";
 import NavBar from "./components/NavBar";
 import Project from "./components/Project";
+import Experience from "./components/Experience";
 import Skills from "./components/Skills";
 import Contact from "./components/Contact";
 import { Routes, Route } from "react-router-dom";
@@ -23,6 +24,7 @@ function App() {
               <Home />
               <AboutUs />
               <Skills />
+              <Experience />
               <Project />
               <Contact />
             </>
@@ -32,6 +34,7 @@ function App() {
         {/* SINGLE PAGES */}
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<AboutUs />} />
+        <Route path="/experience" element={<Experience />} />
         <Route path="/projects" element={<Project />} />
         <Route path="/skills" element={<Skills />} />
         <Route path="/contact" element={<Contact />} />

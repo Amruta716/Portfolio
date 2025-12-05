@@ -11,10 +11,10 @@
 
 /* About Title */
 .about-title {
-  position: relative;
+  /* position: relative; */
   color: #b515ff;
-  font-size: 20px;
-  text-align: left;
+  font-size: 32px;
+  text-align: center;
   margin-top: 40px;
 }
 
@@ -41,7 +41,7 @@
   height: 220px;
   border-radius: 50%;
   border: 5px solid #b515ff;
-  margin-top: -150px;
+  margin-top: -110px;
 }
 
 /* Content Section (Text and Skills) */

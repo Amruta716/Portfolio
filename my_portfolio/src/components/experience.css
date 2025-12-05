@@ -1,0 +1,126 @@
+/* Container */
+.experience-section {
+  padding: 4rem 2rem;
+  background: rgba(255, 255, 255, 0.04);
+  font-family: "Poppins", sans-serif;
+  /* background-color: #0f0f14; */
+}
+
+.experience-heading {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 3rem;
+  color: #b515ff;
+}
+
+/* Timeline container */
+.timeline {
+  position: relative;
+  max-width: 900px;
+  margin: auto;
+  padding: 0 1rem;
+}
+
+/* Timeline vertical line */
+.timeline::after {
+  content: "";
+  position: absolute;
+  width: 4px;
+  background-color: #b515ff;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -2px;
+}
+
+/* Timeline item */
+.timeline-item {
+  padding: 1rem 2rem;
+  position: relative;
+  width: 50%;
+}
+
+.timeline-item.left {
+  left: 0;
+}
+
+.timeline-item.right {
+  left: 50%;
+}
+
+.timeline-item .circle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: #b515ff;
+  border-radius: 50%;
+  top: 1rem;
+  right: -10px;
+  z-index: 1;
+  transition: transform 0.3s;
+}
+
+.timeline-item.left .circle {
+  left: -10px;
+}
+
+/* Content box */
+.timeline-item .content {
+ background-color: #0f0f1450;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 0 25px rgba(181, 21, 255, 0.25);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.timeline-item .content h3 {
+  margin-bottom: 0.5rem;
+  color:white;
+}
+
+.timeline-item .content h4 {
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+   color: #da9cff;
+}
+
+.timeline-item .content .duration {
+  display: block;
+  margin-bottom: 1rem;
+  color: #cfcfcf;
+  font-size: 0.9rem;
+}
+
+.timeline-item .content ul {
+  padding-left: 1.2rem;
+   color: #cfcfcf;
+}
+
+.timeline-item .content ul li {
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+}
+
+/* Hover effect */
+.timeline-item .content:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+@media screen and (max-width: 768px) {
+  .timeline::after {
+    left: 8px;
+  }
+  .timeline-item {
+    width: 100%;
+    padding-left: 2.5rem;
+    padding-right: 1rem;
+  }
+  .timeline-item.right {
+    left: 0%;
+  }
+  .timeline-item .circle {
+    left: 0;
+  }
+}

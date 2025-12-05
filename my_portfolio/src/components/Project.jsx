@@ -1,22 +1,36 @@
 import "./projects.css";
 import ecommerce from "../Asserts/Ecommerce.jpg";
 import quiz from "../Asserts/quiz.png";
+import portfolio from "../Asserts/portfolio.png";
 export default function Projects() {
   const projects = [
+     {
+      title: "Portfolio website",
+      skills: ["HTML", "CSS", "JavaScript", "React Js"],
+      desc: "Showcases my projects, skills, and experience with a modern responsive design built using React JS.",
+      image: portfolio,
+      github: "https://github.com/Amruta716",
+      live:"https://portfolio-mx81j7qe2-amruta-nighots-projects.vercel.app",
+      
+    },
     {
       title: "E-commerce Website",
       skills: ["HTML", "CSS", "JavaScript", "API"],
       desc: "Built a responsive shopping UI with cart management, API integration, and dynamic product display.",
       image: ecommerce, // replace with your project image
       github: "https://github.com/Amruta716",
+      // link:"",
     },
     {
-      title: "Quiz Application",
+      title: "Quiz Website",
       skills: ["HTML", "CSS", "JavaScript"],
       desc: "Interactive quiz platform with live scoring, validations, and user-friendly interface.",
       image: quiz,
       github: "https://github.com/Amruta716",
+       link:"",
+      
     },
+   
   ];
 
   return (
@@ -42,6 +56,10 @@ export default function Projects() {
             <div className="project-buttons">
               <a href={project.github} className="btn github">
                 View Github
+              </a>
+
+               <a href={project.live} className="btn live">
+                View project ↗
               </a>
             </div>
           </div>

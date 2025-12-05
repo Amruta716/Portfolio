@@ -99,7 +99,14 @@
   background: #9d00e8;
   transform: scale(1.05);
 }
+.live {
+  border: 1px solid #9cc1ff;
+  color: #9cc1ff;
+}
 
+.live:hover {
+  background: #1b2b40;
+}
 /* IMAGE AREA */
 .project-right {
   flex: 1;
