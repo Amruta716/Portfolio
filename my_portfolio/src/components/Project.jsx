@@ -19,7 +19,7 @@ export default function Projects() {
       desc: "Built a responsive shopping UI with cart management, API integration, and dynamic product display.",
       image: ecommerce, // replace with your project image
       github: "https://github.com/Amruta716",
-      // link:"",
+      live:"https://e-commerce-website-d5o097fci-amruta-nighots-projects.vercel.app",
     },
     {
       title: "Quiz Website",
@@ -27,7 +27,7 @@ export default function Projects() {
       desc: "Interactive quiz platform with live scoring, validations, and user-friendly interface.",
       image: quiz,
       github: "https://github.com/Amruta716",
-       link:"",
+       live:"https://quiz-proj-97dujur8h-amruta-nighots-projects.vercel.app",
       
     },
    
